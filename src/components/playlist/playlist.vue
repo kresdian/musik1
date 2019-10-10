@@ -29,14 +29,14 @@
         <div class="list-operate">
           <div class="add" @click="showAddSong">
             <i class="icon-add"></i>
-            <span class="text">添加歌曲到队列</span>
+            <span class="text">Tambahkan lagu ke antrian</span>
           </div>
         </div>
         <div class="list-close" @click="hide">
           <span>关闭</span>
         </div>
       </div>
-      <confirm ref="confirm" title="是否清空播放列表" @confirm="confirmClear"></confirm>
+      <confirm ref="confirm" title="Apakah akan menghapus daftar main atau tidak" @confirm="confirmClear"></confirm>
       <add-song ref="addSong"></add-song>
     </div>
   </transition>
@@ -63,7 +63,7 @@
     computed: {
       // 播放模式文字
       modeText() {
-        return this.mode === playMode.random ? '随机播放' : (this.mode === playMode.loop ? '单曲循环' : '顺序播放')
+        return this.mode === playMode.random ? 'Bermain acak' : (this.mode === playMode.loop ? 'Loop tunggal' : 'Pemutaran berurutan')
       }
     },
     watch: {
