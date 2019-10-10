@@ -10,7 +10,7 @@
       <div class="play-wrapper">
         <div class="playBtn" v-show="songs.length > 0" @click="random" ref="playBtn">
           <i class="icon-play"></i>
-          <span class="text">随机播放全部</span>
+          <span class="text">Kocok semua</span>
         </div>
       </div>
     </div>
