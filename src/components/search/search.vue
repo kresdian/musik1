@@ -8,7 +8,7 @@
               :data="shortcut" :refreshDelay="refreshDelay">
         <div>
           <div class="hot-key">
-            <h1 class="title">热门搜索</h1>
+            <h1 class="title">Pencarian populer</h1>
             <ul>
               <li @click="addQuery(item.k)" v-for="item in hotKey" class="item">
                 <span>{{ item.k }}</span>
@@ -17,7 +17,7 @@
           </div>
           <div class="search-history" v-show="searchHistory.length">
             <h1 class="title">
-              <span class="text">搜索历史</span>
+              <span class="text">Riwayat pencarian</span>
               <span class="clear" @click="showConfirm">
                 <i class="icon-clear"></i>
               </span>
@@ -30,7 +30,7 @@
     <div ref="searchResult" class="search-result" v-show="query">
       <suggest ref="suggest" @listScroll="blurInput" @select="saveSearch" :query="query"></suggest>
     </div>
-    <confirm ref="confirm" @confirm="clearSearchHistory" title="是否清空所有搜索历史" confirmBtnText="清空"></confirm>
+    <confirm ref="confirm" @confirm="clearSearchHistory" title="Apakah akan menghapus semua riwayat pencarian" confirmBtnText="Kosong"></confirm>
     <router-view></router-view>
   </div>
 </template>
