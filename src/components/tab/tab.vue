@@ -1,16 +1,16 @@
 <template>
   <div class="tab">
     <router-link class="tab-item" tag="div" to="/recommend">
-      <span class="tab-link">推荐</span>
+      <span class="tab-link">Direkomendasikan</span>
     </router-link>
     <router-link class="tab-item" tag="div" to="/singer">
-      <span class="tab-link">歌手</span>
+      <span class="tab-link">Penyanyi</span>
     </router-link>
     <router-link class="tab-item" tag="div" to="/rank">
-      <span class="tab-link">排行</span>
+      <span class="tab-link">Peringkat</span>
     </router-link>
     <router-link class="tab-item" tag="div" to="/search">
-      <span class="tab-link">搜索</span>
+      <span class="tab-link">Cari</span>
     </router-link>
   </div>
 </template>
